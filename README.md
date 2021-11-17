@@ -1,4 +1,4 @@
-# PRACTICA_BDFI_FINAL1
+# PRACTICA_BDFI_FINAL
 
 ### IMPORTANTE
 Los archivos resultantes de la ejecución de este proyecto se pueden encontrar en la rama **master** de este mismo repositorio.
