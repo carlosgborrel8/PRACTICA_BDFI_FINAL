@@ -211,7 +211,6 @@ MongoDB server version: 4.4.8
   
   ```
   ls models
-  
   ```  
   
   ## Ejecutar el predictor de vuelos
@@ -250,7 +249,6 @@ MongoDB server version: 4.4.8
   ```
   cd practica_big_data_2019/resources/web
   python3.7 predict_flask.py
-  
   ```
 Visitamos el siguiente enlace: http://localhost:5000/flights/delays/predict_kafka y podemos comprobar cómo podemos realizar las peticiones de predicción dando un valor a los distintos parámetros y cómo el sistema nos devuelve la predicción efectuada.
   
@@ -268,8 +266,6 @@ Visitamos el siguiente enlace: http://localhost:5000/flights/delays/predict_kafk
   { "_id" : ObjectId("5d8dcb105e8b5622696d6f2e"), "Origin" : "ATL", "DayOfWeek" : 6, "DayOfYear" : 360, "DayOfMonth" : 25, "Dest" : "SFO", "DepDelay" : 290, "Timestamp" : ISODate("2019-09-27T08:40:48.175Z"), "FlightDate" : ISODate("2016-12-24T23:00:00Z"), "Carrier" : "AA", "UUID" : "8e90da7e-63f5-45f9-8f3d-7d948120e5a2", "Distance" : 2139, "Route" : "ATL-SFO", "Prediction" : 3 }
   { "_id" : ObjectId("5d8dcba85e8b562d1d0f9cb8"), "Origin" : "ATL", "DayOfWeek" : 6, "DayOfYear" : 360, "DayOfMonth" : 25, "Dest" : "SFO", "DepDelay" : 291, "Timestamp" : ISODate("2019-09-27T08:43:20.222Z"), "FlightDate" : ISODate("2016-12-24T23:00:00Z"), "Carrier" : "AA", "UUID" : "d3e44ea5-d42c-4874-b5f7-e8a62b006176", "Distance" : 2139, "Route" : "ATL-SFO", "Prediction" : 3 }
   { "_id" : ObjectId("5d8dcbe05e8b562d1d0f9cba"), "Origin" : "ATL", "DayOfWeek" : 6, "DayOfYear" : 360, "DayOfMonth" : 25, "Dest" : "SFO", "DepDelay" : 5, "Timestamp" : ISODate("2019-09-27T08:44:16.432Z"), "FlightDate" : ISODate("2016-12-24T23:00:00Z"), "Carrier" : "AA", "UUID" : "a153dfb1-172d-4232-819c-8f3687af8600", "Distance" : 2139, "Route" : "ATL-SFO", "Prediction" : 1 }
-
-
 ```
 
 ### Train the model with Apache Airflow (optional)
