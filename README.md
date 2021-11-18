@@ -1,8 +1,5 @@
 # PRACTICA_BDFI_FINAL
 
-### IMPORTANTE
-Los archivos resultantes de la ejecución de este proyecto se pueden encontrar en la rama **master** de este mismo repositorio.
-
 #### Autores
 DANIEL MIGUEL FERNÁNDEZ
 
@@ -258,14 +255,23 @@ Visitamos el siguiente enlace: http://localhost:5000/flights/delays/predict_kafk
   ```
    $ mongo
    > use use agile_data_science;
+//CUIDADO QUE SE COPIA EL "use" 2 veces
    > db.flight_delay_classification_response.find();
   ```
   Como resultado obtenemos algo como lo siguiente:
   
   ```
-  { "_id" : ObjectId("5d8dcb105e8b5622696d6f2e"), "Origin" : "ATL", "DayOfWeek" : 6, "DayOfYear" : 360, "DayOfMonth" : 25, "Dest" : "SFO", "DepDelay" : 290, "Timestamp" : ISODate("2019-09-27T08:40:48.175Z"), "FlightDate" : ISODate("2016-12-24T23:00:00Z"), "Carrier" : "AA", "UUID" : "8e90da7e-63f5-45f9-8f3d-7d948120e5a2", "Distance" : 2139, "Route" : "ATL-SFO", "Prediction" : 3 }
-  { "_id" : ObjectId("5d8dcba85e8b562d1d0f9cb8"), "Origin" : "ATL", "DayOfWeek" : 6, "DayOfYear" : 360, "DayOfMonth" : 25, "Dest" : "SFO", "DepDelay" : 291, "Timestamp" : ISODate("2019-09-27T08:43:20.222Z"), "FlightDate" : ISODate("2016-12-24T23:00:00Z"), "Carrier" : "AA", "UUID" : "d3e44ea5-d42c-4874-b5f7-e8a62b006176", "Distance" : 2139, "Route" : "ATL-SFO", "Prediction" : 3 }
-  { "_id" : ObjectId("5d8dcbe05e8b562d1d0f9cba"), "Origin" : "ATL", "DayOfWeek" : 6, "DayOfYear" : 360, "DayOfMonth" : 25, "Dest" : "SFO", "DepDelay" : 5, "Timestamp" : ISODate("2019-09-27T08:44:16.432Z"), "FlightDate" : ISODate("2016-12-24T23:00:00Z"), "Carrier" : "AA", "UUID" : "a153dfb1-172d-4232-819c-8f3687af8600", "Distance" : 2139, "Route" : "ATL-SFO", "Prediction" : 1 }
+ > db.flight_delay_classification_response.find();
+{ "_id" : ObjectId("618e9163acef065c523b3d4c"), "Origin" : "ATL", "DayOfWeek" : 6, "DayOfYear" : 360, "DayOfMonth" : 25, "Dest" : "SFO", "DepDelay" : 5, "Timestamp" : ISODate("2021-11-12T16:08:02.281Z"), "FlightDate" : ISODate("2016-12-24T23:00:00Z"), "Carrier" : "AA", "UUID" : "5c712c6f-33b4-4323-b34d-31d9fdae8d4f", "Distance" : 2139, "Route" : "ATL-SFO", "Prediction" : 2 }
+{ "_id" : ObjectId("618e9167acef065c523b3d4d"), "Origin" : "ATL", "DayOfWeek" : 6, "DayOfYear" : 360, "DayOfMonth" : 25, "Dest" : "SFO", "DepDelay" : 5, "Timestamp" : ISODate("2021-11-12T16:08:07.209Z"), "FlightDate" : ISODate("2016-12-24T23:00:00Z"), "Carrier" : "AA", "UUID" : "1d2e59a6-8f7f-4cac-b679-893dcb18d2f5", "Distance" : 2139, "Route" : "ATL-SFO", "Prediction" : 2 }
+{ "_id" : ObjectId("618e916bacef065c523b3d4e"), "Origin" : "ATL", "DayOfWeek" : 6, "DayOfYear" : 360, "DayOfMonth" : 25, "Dest" : "SFO", "DepDelay" : 5, "Timestamp" : ISODate("2021-11-12T16:08:10.246Z"), "FlightDate" : ISODate("2016-12-24T23:00:00Z"), "Carrier" : "AA", "UUID" : "f8f2cca2-0c8b-434e-80a1-8e55d11f7147", "Distance" : 2139, "Route" : "ATL-SFO", "Prediction" : 2 }
+{ "_id" : ObjectId("618e918bacef065c523b3d50"), "Origin" : "ATL", "DayOfWeek" : 1, "DayOfYear" : 359, "DayOfMonth" : 25, "Dest" : "SFO", "DepDelay" : 5, "Timestamp" : ISODate("2021-11-12T16:08:42.657Z"), "FlightDate" : ISODate("2018-12-24T23:00:00Z"), "Carrier" : "AA", "UUID" : "f1f3c4de-a51c-4aaa-ae17-e4fcb58e4c8f", "Distance" : 2139, "Route" : "ATL-SFO", "Prediction" : 2 }
+{ "_id" : ObjectId("618e918eacef065c523b3d51"), "Origin" : "ATL", "DayOfWeek" : 1, "DayOfYear" : 359, "DayOfMonth" : 25, "Dest" : "SFO", "DepDelay" : 5, "Timestamp" : ISODate("2021-11-12T16:08:45.339Z"), "FlightDate" : ISODate("2018-12-24T23:00:00Z"), "Carrier" : "AA", "UUID" : "b853972d-7e34-45ca-a0b3-0c58a6281d7f", "Distance" : 2139, "Route" : "ATL-SFO", "Prediction" : 2 }
+{ "_id" : ObjectId("618e91a4acef065c523b3d53"), "Origin" : "SFO", "DayOfWeek" : 6, "DayOfYear" : 360, "DayOfMonth" : 25, "Dest" : "ATL", "DepDelay" : 5, "Timestamp" : ISODate("2021-11-12T16:09:07.923Z"), "FlightDate" : ISODate("2016-12-24T23:00:00Z"), "Carrier" : "AA", "UUID" : "9c4f42c4-4c26-4a54-8e08-d3cd7f415f86", "Distance" : 2139, "Route" : "SFO-ATL", "Prediction" : 2 }
+{ "_id" : ObjectId("618e91a9acef065c523b3d54"), "Origin" : "SFO", "DayOfWeek" : 6, "DayOfYear" : 360, "DayOfMonth" : 25, "Dest" : "ATL", "DepDelay" : 6, "Timestamp" : ISODate("2021-11-12T16:09:12.726Z"), "FlightDate" : ISODate("2016-12-24T23:00:00Z"), "Carrier" : "AA", "UUID" : "a75176d5-9170-43c4-a6e6-216c7dcc0ce0", "Distance" : 2139, "Route" : "SFO-ATL", "Prediction" : 2 }
+{ "_id" : ObjectId("618e91aeacef065c523b3d55"), "Origin" : "SFO", "DayOfWeek" : 6, "DayOfYear" : 360, "DayOfMonth" : 25, "Dest" : "ATL", "DepDelay" : 7, "Timestamp" : ISODate("2021-11-12T16:09:17.736Z"), "FlightDate" : ISODate("2016-12-24T23:00:00Z"), "Carrier" : "AA", "UUID" : "37460f9b-bc6c-40d3-80ec-19afdbd52c3e", "Distance" : 2139, "Route" : "SFO-ATL", "Prediction" : 2 }
+{ "_id" : ObjectId("618e91c4acef065c523b3d57"), "Origin" : "SFO", "DayOfWeek" : 6, "DayOfYear" : 360, "DayOfMonth" : 25, "Dest" : "ATL", "DepDelay" : 7, "Timestamp" : ISODate("2021-11-12T16:09:39.240Z"), "FlightDate" : ISODate("2016-12-24T23:00:00Z"), "Carrier" : "DL", "UUID" : "b47e4823-49d7-4bc7-afd3-3e086d0c754b", "Distance" : 2139, "Route" : "SFO-ATL", "Prediction" : 2 }
+
 ```
 
 ### Train the model with Apache Airflow (optional)
