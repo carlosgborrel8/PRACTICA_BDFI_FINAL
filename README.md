@@ -255,7 +255,7 @@ Visitamos el siguiente enlace: http://localhost:5000/flights/delays/predict_kafk
   ```
    $ mongo
    > use use agile_data_science;
-//CUIDADO QUE SE COPIA EL "use" 2 veces
+//Cuidado con la copia del comando anterior que se copia el "use" 2 veces
    > db.flight_delay_classification_response.find();
   ```
   Como resultado obtenemos algo como lo siguiente:
