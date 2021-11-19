@@ -63,14 +63,6 @@ Instalar los siguientes componentes:
     - No hace falta instalar nada solo descomprimir el paquete. 
  - [Kafka](https://kafka.apache.org/quickstart) (Mandatory version kafka_2.12-3.0.0)
     - No hace falta instalar nada solo descomprimir el paquete.  
- 
- ### Instalación de los requirements de python
- 
- Tras la instalación:
- 
- ```
- pip install -r requirements.txt
- ```
 
 ## Código
 
@@ -84,6 +76,11 @@ Tras esto nos movemos al repositorio clonado en local mediante el comando:
 ```
 cd practica_big_data_2019
 ```
+Ejecutamos los requirements de python
+```
+ pip install -r requirements.txt
+ ```
+
 y ejecutamos el siguiete comando para descargar los recursos que posteriormente utilizaremos para la predicción:
 
 ```
