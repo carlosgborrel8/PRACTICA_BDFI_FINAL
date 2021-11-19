@@ -1,14 +1,17 @@
 # PRACTICA_BDFI_FINAL
 
-#### Autores
-DANIEL MIGUEL FERNÁNDEZ
+#### Información
+##### Autores
 
-CARLOS GARCÍA BORREL
+- DANIEL MIGUEL FERNÁNDEZ
 
-CURSO 2021/2022
+- CARLOS GARCÍA BORREL
 
-ASIGNATURA: BDFI
-
+##### Curso
+2021/2022
+##### Asignatura
+BDFI
+##### Máster
 MÁSTER EN INGENIERÍA DE TELECOMUNICACIÓN (MUIT)
 
 El código base y el guión que se ha seguido para la realización de esta práctica se encuentra en la siguiente url:
