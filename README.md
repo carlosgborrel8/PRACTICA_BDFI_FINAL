@@ -197,7 +197,7 @@ MongoDB server version: 4.4.8
   Asímismo, establecemos la variable de entorno "SPARK_HOME" con la ruta de la carpeta donde hemos descargado Spark:
   
   ```
-  export SPARK_HOME=/home/daniel/Documentos/spark-3.1.2-bin-hadoop3.2
+  export SPARK_HOME=/home/carlosgborrel/Descargas/spark-3.1.2-bin-hadoop3.2
   ```
   Ejecutamos el script `train_spark_mllib_model.py`:
   
@@ -215,7 +215,7 @@ MongoDB server version: 4.4.8
   En la clase de scala "MakePrediction" cambiamos la siguiente línea por medio de un editor de código (IntellJ) añadiendo la ruta donde hemos clonado el repositorio:
   
   ```
-  val base_path= "/home/daniel/Documentos/practica_big_data_2019"
+  val base_path= "/home/carlosgborrel/Escritorio/practica_big_data_2019"
   ``` 
   Ejecutamos el código usando spark-submit con los siguientes comandos desde la carpeta de spark: 
   
@@ -240,7 +240,7 @@ MongoDB server version: 4.4.8
   Establecemos la variable de entorno "PROJECT_HOME" con la ruta donde hemos clonado el repositorio:
   
   ```
-  export PROJECT_HOME=/home/daniel/Documentos/practica_big_data_2019
+  export PROJECT_HOME=/home/carlosgborrel/Escritorio/practica_big_data_2019
   ```
   Accedemos al directorio "web" dentro del directorio "resources" y ejecutamos el archivo "predict_flask.py":
   ```
